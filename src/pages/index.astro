@@ -1,132 +1,120 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-const services = [
-  { number:'01', label:'Connectivity', title:'Build the network.', body:'Terrestrial, fiber-optic, wireless, and network connectivity services designed to support dependable digital operations.', items:['Fiber-optic network solutions','Broadband and wireless connectivity','Network design and performance planning'] },
-  { number:'02', label:'Cybersecurity', title:'Protect the system.', body:'Cybersecurity services focused on protecting digital infrastructure from unauthorized access, cyber threats, and data breaches, with incident response and recovery support.', items:['Threat detection and prevention','Infrastructure security','Incident response and recovery'] },
-  { number:'03', label:'Digital forensics', title:'Prove what happened.', body:'Digital forensic services supporting the examination of systems and digital evidence to trace breaches, identify malicious activity, recover critical information, and assist investigations.', items:['Digital evidence examination','Breach and incident analysis','Investigative support and recovery'] }
-]
-const executives = [
-  ['Yarnike Washington','Chairman of the Board & Founder'],
-  ['Amit Srivastava','Co-Founder & Board Member'],
-  ['Shailesh Jain','Chief Technology Officer'],
-  ['Shweta Singh','Chief Information Officer']
-]
-const operatingTeam = [
-  ['Jennifer Jones-ElHag','Director of Communications'],['Tiffany Childs','Director Human Resource'],['Deleep George','Manager Network Design'],['Sandeep Katore','Manager System Engineer'],['Arsh T','Software Developer'],['Kiran Tarlekar','Manager Software Developer'],['Jerlene Treherne','Manager Digital Marketer']
+
+const team = [
+  ['Yarnike Washington', 'Chairman of the Board & Founder'],
+  ['Amit Srivastava', 'Co-Founder & Board Member'],
+  ['Shailesh Jain', 'Chief Technology Officer'],
+  ['Jennifer Jones-ElHag', 'Director of Communications'],
+  ['Tiffany Childs', 'Director Human Resource'],
+  ['Deleep George', 'Manager Network Design'],
+  ['Sandeep Katore', 'Manager System Engineer'],
+  ['Shweta Singh', 'Chief Information Officer'],
+  ['Arsh T', 'Software Developer'],
+  ['Kiran Tarlekar', 'Manager Software Developer'],
+  ['Jerlene Treherne', 'Manager Digital Marketer']
 ]
 ---
 <BaseLayout
-  title="Virtue Media Visions Network | Telecommunications, Cybersecurity & Digital Forensics"
-  description="Virtue Media Visions Network LLC provides broadband and fiber-optic connectivity, cybersecurity services, and digital forensics support from New York and Bhubaneswar."
+  title="Virtue Media Visions Network LLC | Telecommunications & ICT"
+  description="Virtue Media Visions Network LLC specializes in broadband connectivity, cybersecurity, and digital forensics."
 >
-  <section class="hero-stage">
-    <div class="mx-auto max-w-[1480px] hero-shell">
+  <section class="hero">
+    <div class="hero-inner">
       <div class="hero-copy">
-        <div>
-          <p class="eyebrow text-gold-bright">Telecommunications · Cybersecurity · Digital Forensics</p>
-          <h1 class="editorial-display hero-headline"><span>Build the network.</span><span>Protect the system.</span><span class="gold-word">Prove what happened.</span></h1>
-        </div>
-        <div class="hero-lower">
-          <p class="hero-deck">Virtue Media Visions Network LLC combines broadband and fiber infrastructure, cybersecurity, and digital forensics across operating locations in New York and Bhubaneswar.</p>
-          <div class="flex flex-wrap gap-x-7 gap-y-5">
-            <a class="rule-link text-gold-bright" href="tel:+18889335878">Talk to VMV <span aria-hidden="true">↗</span></a>
-            <a class="rule-link text-white/65" href="#capabilities">View capabilities <span aria-hidden="true">↓</span></a>
-          </div>
+        <p class="kicker">Telecommunications & ICT</p>
+        <h1>Virtue Media Visions Network LLC</h1>
+        <p class="tagline">Building new communities to empower endless possibilities!</p>
+        <p class="hero-summary">Broadband connectivity, cybersecurity, and digital forensics delivered through terrestrial, fiber-optic, wireless, and network infrastructure.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#services">Explore Services</a>
+          <a class="secondary-link" href="tel:+18889335878">Call VMV</a>
         </div>
       </div>
-      <aside class="hero-aside">
-        <div class="flex items-start justify-between gap-6">
-          <div>
-            <p class="eyebrow text-white/40">Network identity</p>
-            <p class="mt-3 max-w-[220px] text-sm leading-relaxed text-white/60">Information, communications, technology, security, and digital evidence.</p>
-          </div>
-          <img src="/icons/vmv-icon.png" width="210" height="210" alt="Virtue Media Visions monogram" />
-        </div>
-        <div class="hero-signal">
-          <p class="eyebrow text-gold-bright">Operating corridor</p>
-          <div class="signal-line"></div>
-          <div class="signal-meta"><span>New York</span><span>Bhubaneswar</span></div>
-        </div>
-      </aside>
-    </div>
-    <div class="hero-strip">
-      <div><span>01</span><strong>Broadband + Fiber</strong></div>
-      <div><span>02</span><strong>Cybersecurity</strong></div>
-      <div><span>03</span><strong>Digital Forensics</strong></div>
-    </div>
-  </section>
-
-  <section id="company" class="border-b border-line bg-paper">
-    <div class="section-wrap thesis-grid">
-      <p class="eyebrow pt-2 text-smoke">01 / Company</p>
-      <h2 class="editorial-display thesis-title">Connectivity is the beginning. Protection and accountability complete the job.</h2>
-      <div class="thesis-copy lg:pt-2">
-        <p>Virtue Media Visions Network LLC is a telecommunications and information and communications technology company focused on broadband connectivity, cybersecurity, and digital forensics.</p>
-        <p>Its work spans terrestrial and fiber-optic networks, wireless connectivity, infrastructure security, incident response, and digital evidence examination.</p>
-        <div class="gold-rule mt-10"></div>
+      <div class="hero-mark">
+        <img src="/icons/vmv-icon.png" width="360" height="360" alt="Virtue Media Visions Network monogram" />
       </div>
     </div>
   </section>
 
-  <section id="capabilities" class="cap-stage">
-    <div class="section-wrap">
-      <div class="cap-head">
-        <p class="eyebrow pt-2 text-white/40">02 / Capabilities</p>
-        <h2 class="editorial-display">One company. Three connected disciplines.</h2>
+  <section id="about" class="section section-light">
+    <div class="section-grid">
+      <div class="section-label">About Us</div>
+      <div class="section-content prose-large">
+        <h2>Advancing digital communication while safeguarding the systems behind it.</h2>
+        <p>Virtue Media Visions Network LLC is a leading Telecommunications and ICT (Information and Communications Technology) company, specializing in Broadband connectivity, Cybersecurity, and Digital Forensics.</p>
+        <p>We deliver high-performance services through terrestrial and Fiber-Optic networks, ensuring fast, reliable access for our customers. In addition to our core offerings, we implement cutting-edge Cybersecurity solutions to protect against digital threats and provide expert Digital Forensics services for secure, thorough investigations of cyber incidents.</p>
+        <p>VMV is dedicated to advancing digital communication, safeguarding data, and delivering seamless media experiences to our users.</p>
       </div>
-      {services.map((service) => (
-        <article class="cap-row">
-          <div><div class="cap-num">{service.number}</div><p class="eyebrow mt-3 text-white/38">{service.label}</p></div>
-          <div><h3>{service.title}</h3><p class="mt-5">{service.body}</p></div>
-          <ul>{service.items.map((item) => <li>{item}</li>)}</ul>
+    </div>
+  </section>
+
+  <section id="services" class="section section-dark">
+    <div class="section-grid">
+      <div class="section-label">Our Services</div>
+      <div class="service-list">
+        <article class="service-row">
+          <h2>Fiber Optics Solution</h2>
+          <p>Virtue Media Vision's Network LLC will revolutionize your online experience with advanced connectivity solutions tailored for the modern digital age. We go beyond basic browsing — providing enterprise-grade connectivity, wireless solutions, and robust network services that ensure unparalleled speed, reliability, and performance optimization. Whether for business or personal use, our ISP-driven solutions deliver high-speed, secure, and seamless internet access. Benefit from improved search engine visibility, faster loading times, and cutting-edge wireless technology. Elevate your connection to the next level and experience the future of digital connectivity with Virtue Media Vision's Network LLC.</p>
         </article>
-      ))}
+        <article class="service-row">
+          <h2>Cybersecurity</h2>
+          <p>At Virtue Media Vision's Network LLC, we provide comprehensive cybersecurity solutions designed to safeguard the digital infrastructure. Our advanced security measures protect against cyber threats, data breaches, and unauthorized access, ensuring the integrity of your systems and information. From proactive threat detection and prevention to incident response and recovery, our cybersecurity services offer robust, end-to-end protection. Trust us to keep your business secure, compliant, and resilient in today’s evolving digital landscape.</p>
+        </article>
+        <article class="service-row">
+          <h2>Digital Forensics</h2>
+          <p>We offer advanced digital forensic services to investigate and resolve cyber incidents swiftly and effectively. Our forensic experts meticulously analyze digital evidence to trace breaches, uncover malicious activity, and support legal investigations. Whether you're dealing with data theft, cyberattacks, or internal misconduct, our comprehensive solutions ensure a thorough and secure examination of your systems. Rely on our digital forensics expertise to help you recover critical information, restore business operations, and protect your organization from future threats.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section id="presence" class="presence-stage border-b border-line">
-    <div class="section-wrap presence-grid">
-      <p class="eyebrow pt-2 text-smoke">03 / Presence</p>
-      <div class="presence-head">
-        <h2 class="editorial-display">New York ↔ Bhubaneswar.</h2>
-        <p class="presence-note">VMV maintains operating addresses in New York City and Bhubaneswar, Odisha, connecting its telecommunications and ICT presence across two distinct markets.</p>
-        <div class="corridor" aria-label="Operating locations: New York and Bhubaneswar">
-          <div class="corridor-city"><strong>New York</strong><span>30 Wall St · New York, NY</span></div>
-          <div class="corridor-track"><span class="corridor-pulse"></span></div>
-          <div class="corridor-city text-left md:text-right"><strong>Bhubaneswar</strong><span>Saheed Nagar · Odisha</span></div>
+  <section class="availability">
+    <div>
+      <p class="kicker">Service Availability</p>
+      <h2>Check the ability to connect our services in your area.</h2>
+    </div>
+    <a class="primary-link dark" href="#contact">Get in Touch</a>
+  </section>
+
+  <section id="team" class="section section-light">
+    <div class="section-grid">
+      <div class="section-label">Meet The Team</div>
+      <div class="team-list">
+        {team.map((person) => (
+          <div class="team-row">
+            <strong>{person[0]}</strong>
+            <span>{person[1]}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="section-grid">
+      <div class="section-label">Get in Touch</div>
+      <div class="contact-grid">
+        <div>
+          <h2>Virtue Media Visions Network LLC</h2>
+          <p class="company-type">An Information, Communications and Technology Company.</p>
+          <a class="phone-link" href="tel:+18889335878">1 (888) 933-5878 <span>Ext. 101</span></a>
         </div>
+        <address>
+          <div>
+            <strong>New York</strong>
+            <span>30 Wall St</span>
+            <span>8th Floor #1050</span>
+            <span>New York, NY 10005</span>
+          </div>
+          <div>
+            <strong>Bhubaneswar</strong>
+            <span>401, BMC Bhawani Mall St</span>
+            <span>Saheed Nagar, Bhubaneswar</span>
+            <span>Odisha 751007</span>
+          </div>
+        </address>
       </div>
-    </div>
-  </section>
-
-  <section id="leadership" class="bg-paper border-b border-line">
-    <div class="section-wrap">
-      <div class="leadership-head">
-        <p class="eyebrow pt-2 text-smoke">04 / Leadership</p>
-        <div><h2 class="editorial-display">The people behind the network.</h2><p class="mt-7 max-w-[760px] text-lg leading-relaxed text-ink/58">VMV’s board and operating team spans technology, communications, network design, software, human resources, and marketing.</p></div>
-      </div>
-      <div class="executive-grid">
-        {executives.map((person) => <div class="executive"><span class="role">{person[1]}</span><strong>{person[0]}</strong></div>)}
-      </div>
-      <div class="team-rail">
-        {operatingTeam.map((person,index) => <div class="team-row"><span class="index">{String(index + 5).padStart(2,'0')}</span><strong>{person[0]}</strong><span class="role">{person[1]}</span></div>)}
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact-stage">
-    <div class="section-wrap contact-grid">
-      <div>
-        <p class="eyebrow text-gold-bright">05 / Contact</p>
-        <h2 class="editorial-display">Bring us the network problem.</h2>
-        <div class="mt-12 flex flex-wrap gap-x-8 gap-y-5">
-          <a class="rule-link text-gold-bright" href="tel:+18889335878">Call +1 (888) 933-5878 · Ext. 101 <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <address class="contact-addresses not-italic">
-        <div class="contact-address"><p class="eyebrow text-white/36">United States</p><strong>30 Wall St · 8th Floor #1050</strong><span>New York, NY 10005</span></div>
-        <div class="contact-address"><p class="eyebrow text-white/36">India</p><strong>401, BMC Bhawani Mall St</strong><span>Saheed Nagar · Bhubaneswar · Odisha 751007</span></div>
-      </address>
     </div>
   </section>
 </BaseLayout>

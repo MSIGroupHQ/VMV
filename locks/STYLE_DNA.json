@@ -1,25 +1,27 @@
 {
-  "version": "V04_CONVICTION",
-  "category": "institutional telecommunications / ICT",
-  "composition": "editorial infrastructure",
-  "palette": ["night", "graphite", "paper", "gold", "restrained cyan"],
-  "type": {
-    "display": "Newsreader",
-    "interface": "Inter Tight"
+  "version": "V05_SOURCE_FAITHFUL",
+  "category": "telecommunications and ICT",
+  "source_authority": "original VMV site copy and supplied VMV brand asset",
+  "composition": "clean corporate infrastructure",
+  "palette": ["deep navy", "white", "soft gray", "restrained gold"],
+  "typography": {
+    "system": "native system sans-serif",
+    "serif": false,
+    "external_font_dependency": false
   },
   "interaction": {
-    "navigation": "rail-first",
-    "primary_action": "single contact rail",
-    "motion": "M1 restrained",
-    "pills_or_chips": false
+    "navigation": "simple text rail",
+    "primary_action": "Explore Services / Call VMV",
+    "motion": "none beyond native browser behavior",
+    "icon_library": "Lucide only if an icon becomes necessary; current build uses no UI icon library"
   },
-  "visual_rules": [
-    "approved PNG monogram remains restrained",
-    "no generic SaaS cards",
-    "no decorative CTA slab language",
-    "no sci-fi HUD treatment",
-    "no exposed internal mechanics",
-    "full-width editorial capability rails",
-    "warm paper and dark infrastructure surfaces"
+  "forbidden": [
+    "invented manifesto copy",
+    "orbital or HUD decoration",
+    "generic AI-tech visual language",
+    "decorative icon spam",
+    "non-Lucide UI icons",
+    "React runtime",
+    "Tailwind dependency"
   ]
 }

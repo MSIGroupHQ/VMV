@@ -1,6 +1,6 @@
 {
-  "name": "virtue-media-visions-network-astro",
-  "version": "4.0.0",
+  "name": "virtue-media-visions-network",
+  "version": "5.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,8 +9,6 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "4.3.3",
-    "astro": "7.1.6",
-    "tailwindcss": "4.3.3"
+    "astro": "7.1.6"
   }
 }

@@ -1,12 +1,15 @@
 # Virtue Media Visions Network
 
-Premium Astro/Tailwind reconstruction of the Virtue Media Visions Network LLC website.
+Source-faithful premium reconstruction of the Virtue Media Visions Network LLC website.
 
 ## Stack
 
 - Astro static output
-- Tailwind CSS 4
-- PNG-only VMV icon system
+- Plain CSS
+- PNG-only VMV brand icon
+- No React runtime
+- No Tailwind dependency
+- No UI icon library in the current surface; if icons are introduced, Lucide is the only approved source
 - Cloudflare Pages Git builds
 
 ## Cloudflare Pages
@@ -14,6 +17,7 @@ Premium Astro/Tailwind reconstruction of the Virtue Media Visions Network LLC we
 - Production branch: `main`
 - Build command: `npm run build`
 - Build output directory: `dist`
+- Root directory: `/`
 - Node: pinned via `.node-version`
 
 ## Local
@@ -23,3 +27,7 @@ npm install
 npm run dev
 npm run build
 ```
+
+## Copy authority
+
+The supplied original `www.vmvnetwork.com` site is the authority for company copy, service descriptions, team roster, locations, phone number, and public terminology. Grammar and hierarchy may be improved, but substantive public copy should not be replaced without approval.
