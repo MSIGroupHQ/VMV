@@ -1,0 +1,16 @@
+{
+  "name": "Virtue Media Visions Network LLC",
+  "short_name": "VMV Network",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05080c",
+  "theme_color": "#05080c",
+  "icons": [
+    {
+      "src": "/icons/vmv-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
