@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
 
 @theme {
   --font-sans: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
@@ -20,7 +19,11 @@
   --radius-control: 0.5rem;
 }
 
-:root { color-scheme: light; --shadow-nav: 0 18px 44px rgba(0,0,0,.28); --hero-grid: rgba(255,255,255,.035); }
+:root {
+  color-scheme: light;
+  --shadow-nav: 0 18px 44px rgba(0,0,0,.28);
+  --hero-grid: rgba(255,255,255,.035);
+}
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: var(--color-night); }
 body { margin: 0; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); font-size: 16px; line-height: 1.55; text-rendering: optimizeLegibility; }
