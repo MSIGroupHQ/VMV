@@ -2,20 +2,20 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 
 const team = [
-  ['Yarnike Washington', 'Chairman of the Board & Founder', 'https://static.wixstatic.com/media/bb3534_75a76d2902b44372bff2fb6baba67367~mv2.jpg/v1/crop/x_0,y_52,w_328,h_347/fill/w_422,h_434,al_c,lg_1,q_85,enc_avif,quality_auto/Page-1-Image-1.jpg'],
-  ['Amit Srivastava', 'Co-Founder & Board Member', 'https://static.wixstatic.com/media/bb3534_f8ad8338978d4dce8c576d7cc4ce986d~mv2.jpg/v1/crop/x_0,y_1,w_362,h_363/fill/w_432,h_434,al_c,lg_1,q_85,enc_avif,quality_auto/Page-1-Image-3.jpg'],
-  ['Shailesh Jain', 'Chief Technology Officer', 'https://static.wixstatic.com/media/848e8e_444dd6339b054efbbc5d3c86bf92bd23~mv2.jpg/v1/crop/x_9,y_21,w_395,h_348/fill/w_450,h_410,al_c,lg_1,q_85,enc_avif,quality_auto/Shailesh-Pic_edited.jpg'],
-  ['Jennifer Jones-ElHag', 'Director of Communications', 'https://static.wixstatic.com/media/848e8e_9411748ce5dc48b0823a98b797a56cf1~mv2.jpg/v1/crop/x_0,y_0,w_270,h_302/fill/w_378,h_396,al_c,lg_1,q_85,enc_avif,quality_auto/Jennifer.jpg'],
-  ['Tiffany Childs', 'Director Human Resource', 'https://static.wixstatic.com/media/848e8e_b078b3e8154e466ea410e524043fea21~mv2.jpg/v1/crop/x_119,y_25,w_895,h_958/fill/w_378,h_380,al_c,q_85,enc_avif,quality_auto/Tiffanypic.jpg'],
-  ['Deleep George', 'Manager Network Design', 'https://static.wixstatic.com/media/848e8e_ca47adf95873476fb3bfc39f58ef123a~mv2.jpeg/v1/crop/x_0,y_9,w_413,h_398/fill/w_378,h_364,al_c,q_85,enc_avif,quality_auto/Deleep.jpeg'],
-  ['Sandeep Katore', 'Manager System Engineer', 'https://static.wixstatic.com/media/848e8e_3a11f6e1e03b4eee885ee18992432757~mv2.jpg/v1/crop/x_1867,y_743,w_1902,h_1910/fill/w_346,h_348,al_c,q_85,enc_avif,quality_auto/Sandeep%20Profile_JPG.jpg'],
-  ['Shweta Singh', 'Chief Information Officer', 'https://static.wixstatic.com/media/848e8e_26c1dbe49a864a6e9d77e07d23880e26~mv2.jpg/v1/crop/x_77,y_0,w_261,h_263/fill/w_330,h_332,al_c,lg_1,q_85,enc_avif,quality_auto/Shweta%20Singh.jpg'],
-  ['Arsh T', 'Software Developer', 'https://static.wixstatic.com/media/848e8e_322ba84c83fc46b0b3dd14208a409804~mv2.jpg/v1/crop/x_151,y_173,w_877,h_881/fill/w_342,h_344,al_c,q_85,enc_avif,quality_auto/Arsh%20T.jpg'],
-  ['Kiran Tarlekar', 'Manager Software Developer', 'https://static.wixstatic.com/media/848e8e_f68eab8e75d6452087921aec000c2762~mv2.jpg/v1/crop/x_0,y_10,w_452,h_478/fill/w_362,h_358,al_c,q_85,enc_avif,quality_auto/KIRAN_PHOTO_edited.jpg'],
-  ['Jerlene Treherne', 'Manager Digital Marketer', 'https://static.wixstatic.com/media/848e8e_474449568c1544009835c5849001eec4~mv2.png/v1/crop/x_50,y_28,w_329,h_329/fill/w_328,h_328,al_c,q_90,enc_avif,quality_auto/44_PNG.png']
+  ['Yarnike Washington', 'Chairman of the Board & Founder', '/images/vmv/team-yarnike-washington.webp'],
+  ['Amit Srivastava', 'Co-Founder & Board Member', '/images/vmv/team-amit-srivastava.webp'],
+  ['Shailesh Jain', 'Chief Technology Officer', '/images/vmv/team-shailesh-jain.webp'],
+  ['Jennifer Jones-ElHag', 'Director of Communications', '/images/vmv/team-jennifer-jones-elhag.webp'],
+  ['Tiffany Childs', 'Director Human Resource', '/images/vmv/team-tiffany-childs.webp'],
+  ['Deleep George', 'Manager Network Design', '/images/vmv/team-deleep-george.webp'],
+  ['Sandeep Katore', 'Manager System Engineer', '/images/vmv/team-sandeep-katore.webp'],
+  ['Shweta Singh', 'Chief Information Officer', '/images/vmv/team-shweta-singh.webp'],
+  ['Arsh T', 'Software Developer', '/images/vmv/team-arsh-t.webp'],
+  ['Kiran Tarlekar', 'Manager Software Developer', '/images/vmv/team-kiran-tarlekar.webp'],
+  ['Jerlene Treherne', 'Manager Digital Marketer', '/images/vmv/team-jerlene-treherne.webp']
 ]
 
-const heroImage = 'https://static.wixstatic.com/media/848e8e_2c685d962aab4a86815a203555883f57~mv2.jpg/v1/fill/w_1200,h_1100,al_c,q_90,enc_avif,quality_auto/848e8e_2c685d962aab4a86815a203555883f57~mv2.jpg'
+const heroImage = '/images/vmv/hero.webp'
 ---
 <BaseLayout
   title="Virtue Media Visions Network LLC | Telecommunications & ICT"
@@ -33,7 +33,7 @@ const heroImage = 'https://static.wixstatic.com/media/848e8e_2c685d962aab4a86815
         </div>
       </div>
       <figure class="hero-photo">
-        <img src={heroImage} alt="Digital network infrastructure" width="1200" height="1100" fetchpriority="high" />
+        <img src={heroImage} alt="Digital network infrastructure" width="1960" height="1110" fetchpriority="high" />
       </figure>
     </div>
   </section>
