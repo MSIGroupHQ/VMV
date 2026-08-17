@@ -1,0 +1,6 @@
+{
+  "/": ["hero", "company", "capabilities", "presence", "leadership", "contact", "footer"],
+  "/privacy": ["policy", "footer"],
+  "/terms": ["policy", "footer"],
+  "/accessibility": ["policy", "footer"]
+}
