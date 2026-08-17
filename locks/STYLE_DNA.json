@@ -1,0 +1,25 @@
+{
+  "version": "V04_CONVICTION",
+  "category": "institutional telecommunications / ICT",
+  "composition": "editorial infrastructure",
+  "palette": ["night", "graphite", "paper", "gold", "restrained cyan"],
+  "type": {
+    "display": "Newsreader",
+    "interface": "Inter Tight"
+  },
+  "interaction": {
+    "navigation": "rail-first",
+    "primary_action": "single contact rail",
+    "motion": "M1 restrained",
+    "pills_or_chips": false
+  },
+  "visual_rules": [
+    "approved PNG monogram remains restrained",
+    "no generic SaaS cards",
+    "no decorative CTA slab language",
+    "no sci-fi HUD treatment",
+    "no exposed internal mechanics",
+    "full-width editorial capability rails",
+    "warm paper and dark infrastructure surfaces"
+  ]
+}
