@@ -1,0 +1,28 @@
+{
+  "Header": {
+    "purpose": "primary navigation and identity rail",
+    "required": ["semantic navigation", "skip link", "contained mobile menu", "single primary contact action"],
+    "forbidden": ["pill navigation", "language wall", "multi-CTA header"],
+    "responsive": "desktop rail; native details mobile menu"
+  },
+  "Hero": {
+    "purpose": "establish company thesis and direct contact path",
+    "required": ["one h1", "one dominant action", "approved PNG emblem", "mobile containment"],
+    "forbidden": ["generic gradient hero", "three equal CTAs", "oversized app icon presentation"]
+  },
+  "CapabilityRail": {
+    "purpose": "present the three operating disciplines",
+    "required": ["number", "discipline", "plain-language capability", "supporting list"],
+    "forbidden": ["card spam", "unsupported metrics", "decorative icon spam"]
+  },
+  "RailLink": {
+    "purpose": "navigation or direct contact",
+    "required": ["real anchor", "visible focus", "clear destination"],
+    "forbidden": ["fake button navigation"]
+  },
+  "Footer": {
+    "purpose": "entity identity and policy routing",
+    "required": ["privacy", "terms", "accessibility", "entity name"],
+    "forbidden": ["placeholder navigation", "internal project language"]
+  }
+}
