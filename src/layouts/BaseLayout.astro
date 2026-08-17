@@ -1,0 +1,62 @@
+---
+import '../styles/global.css'
+import SiteHeader from '../components/SiteHeader.astro'
+import SiteFooter from '../components/SiteFooter.astro'
+
+interface Props {
+  title: string
+  description: string
+  canonical?: string
+  robots?: string
+  pageClass?: string
+}
+const {
+  title,
+  description,
+  canonical = 'https://www.vmvnetwork.com/',
+  robots = 'index,follow',
+  pageClass = ''
+} = Astro.props
+const ogImage = new URL('/icons/vmv-icon.png', Astro.site)
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <meta name="theme-color" content="#05080c" />
+    <link rel="canonical" href={canonical} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/icons/vmv-icon.png" sizes="any" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/vmv-icon.png" />
+    <link rel="apple-touch-icon" href="/icons/vmv-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Virtue Media Visions Network LLC',
+      url: 'https://www.vmvnetwork.com/',
+      telephone: '+1-888-933-5878',
+      address: [
+        {'@type':'PostalAddress', streetAddress:'30 Wall St, 8th Floor #1050', addressLocality:'New York', addressRegion:'NY', postalCode:'10005', addressCountry:'US'},
+        {'@type':'PostalAddress', streetAddress:'401, BMC Bhawani Mall St, Saheed Nagar', addressLocality:'Bhubaneswar', addressRegion:'Odisha', postalCode:'751007', addressCountry:'IN'}
+      ]
+    })} />
+  </head>
+  <body class={pageClass}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <SiteHeader />
+    <main id="main"><slot /></main>
+    <SiteFooter />
+  </body>
+</html>
