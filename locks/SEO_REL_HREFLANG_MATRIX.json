@@ -1,0 +1,12 @@
+{
+  "canonical_map": {
+    "/": "https://www.vmvnetwork.com/",
+    "/privacy": "https://www.vmvnetwork.com/privacy",
+    "/terms": "https://www.vmvnetwork.com/terms",
+    "/accessibility": "https://www.vmvnetwork.com/accessibility"
+  },
+  "robots": "index,follow",
+  "hreflang": null,
+  "schema": ["Organization"],
+  "sitemap": "/sitemap.xml"
+}
