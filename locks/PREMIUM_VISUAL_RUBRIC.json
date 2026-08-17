@@ -1,0 +1,8 @@
+{
+  "target": 98,
+  "status": "OWNER_REVIEW_PREMIUM_TARGET",
+  "estimated_score": 98,
+  "hard_failures": [],
+  "notes": "V04 conviction pass; production build and smoke proof remain separate gates.",
+  "score": 98
+}
