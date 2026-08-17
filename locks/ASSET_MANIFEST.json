@@ -1,0 +1,18 @@
+{
+  "version": "V04_CLOUDFLARE_PRODUCTION",
+  "icon_master_sha256": "902d75fa484eb0fc1464907de03e46c079ad4c614eff6d564c251920fb930edd",
+  "icon_master_custody": "attested handoff artifact; production repo uses approved 512px PNG derivative",
+  "public_assets": [
+    "/icons/vmv-icon.png",
+    "/site.webmanifest",
+    "/robots.txt",
+    "/sitemap.xml",
+    "/_headers"
+  ],
+  "forbidden_public_assets": [
+    "svg logo assets",
+    "legacy Wix assets",
+    "internal MIDAS source files",
+    "raw handoff archives"
+  ]
+}
