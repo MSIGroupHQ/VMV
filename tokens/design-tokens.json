@@ -1,0 +1,55 @@
+{
+  "color": {
+    "paper": "#f1eee6",
+    "paper_deep": "#e4ded2",
+    "ink": "#0a0d12",
+    "graphite": "#12171d",
+    "night": "#05080c",
+    "smoke": "#6d747c",
+    "line": "#c9c2b6",
+    "gold": "#a97d2f",
+    "gold_bright": "#ddb85f",
+    "cyan": "#2a8fa3",
+    "focus": "#2a8fa3"
+  },
+  "typography": {
+    "display": "Newsreader",
+    "interface": "Inter Tight",
+    "max_fonts": 2
+  },
+  "spacing": {
+    "base": 8,
+    "page": "clamp(1.35rem, 4vw, 4.75rem)",
+    "section": "clamp(5.5rem, 10vw, 10rem)"
+  },
+  "radius": {
+    "control": "0.5rem",
+    "icon_display": "2.625rem"
+  },
+  "border": {
+    "rule": "1px"
+  },
+  "shadow": {
+    "navigation": "0 18px 44px rgba(0,0,0,.28)"
+  },
+  "motion": {
+    "tier": "M1",
+    "duration": "180ms",
+    "reduced_motion_safe": true
+  },
+  "layout": {
+    "max_width": "1480px"
+  },
+  "interaction": {
+    "primary_action": "underlined contact rail",
+    "pill_primary": false
+  },
+  "focus": {
+    "width": "2px",
+    "offset": "4px"
+  },
+  "breakpoints": {
+    "mobile": "760px",
+    "tablet": "1080px"
+  }
+}
